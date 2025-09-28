@@ -10,7 +10,7 @@ This project was completed as part of my learning journey into C programming.
 * Accepts decimal numbers (`double` data type).
 * Includes basic error handling for division by zero and invalid operators.
 * Runs in any standard command-line terminal.
-
+ 
 
 
       #include <stdio.h>
