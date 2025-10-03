@@ -1,5 +1,9 @@
 # Simple-calculator
 
+ 
+ #1 In C programming language   
+
+
 This is a simple calculator built using the C programming language. It's a beginner-friendly project created to practice fundamental C concepts like variables, user input/output (`scanf`/`printf`), and control flow (`switch` statement).
 
 This project was completed as part of my learning journey into C programming.
@@ -13,22 +17,22 @@ This project was completed as part of my learning journey into C programming.
  
 
 
-      #include <stdio.h>
+       #include <stdio.h>
 
-      int main() {
+       int main() {
     
-      char operator;
+       char operator;
 
        printf("Enter an operator (+, -, *, /): ");
        scanf(" %c", &operator); // Note the space before %c
 
     
-      printf("Enter two numbers: ");
-      scanf("%lf %lf", &num1, &num2);
+       printf("Enter two numbers: ");
+       scanf("%lf %lf", &num1, &num2);
 
- 
-      switch (operator) {
-        case '+':
+   
+        switch (operator) {
+         case '+':
             printf("%.1lf + %.1lf = %.1lf\n", num1, num2, num1 + num2);
             break;
         
@@ -57,9 +61,3 @@ This project was completed as part of my learning journey into C programming.
        return 0;
          }
 
-
-  AFTER SOME TIME I WILL ADD MORE TYPES FOR COODE IN OTHER LANGUAGES FOR THE CALCULATOR
-
- THANK YOU FOR GIVING YOOUR TIME
-
- DIVYANSH SHUKLA
