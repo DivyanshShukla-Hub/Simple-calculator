@@ -101,6 +101,7 @@ This project was completed as part of my learning journey into C programming.
 
 
   How It Works
+  
  1 Get User Input: The input() function prompts the user for information and reads what they type as a string (text).
 
  2 Error Handling: The entire logic is wrapped in a try...except block. The program tries to run the code inside. If the user enters text where a number is expected, a ValueError occurs, and the        program jumps to the except ValueError: block and prints a friendly error message instead of crashing.
