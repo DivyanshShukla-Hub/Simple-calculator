@@ -8,7 +8,7 @@ This is a simple calculator built using the C programming language. It's a begin
 
 This project was completed as part of my learning journey into C programming.
 
-## Features :
+## Features : 
 
 * Performs basic arithmetic operations: Addition (+), Subtraction (-), Multiplication (*), and Division (/).
  * Accepts decimal numbers (`double` data type).
