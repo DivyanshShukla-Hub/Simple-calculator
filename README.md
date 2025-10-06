@@ -64,7 +64,21 @@ This project was completed as part of my learning journey into C programming.
 
    # 2 In Phyton 
 
-  calculator.py
+ How It Works
+  
+ 1 Get User Input: The input() function prompts the user for information and reads what they type as a string (text).
+
+ 2 Error Handling: The entire logic is wrapped in a try...except block. The program tries to run the code inside. If the user enters text where a number is expected, a ValueError occurs, and the        program jumps to the except ValueError: block and prints a friendly error message instead of crashing.
+
+ 3 Convert Text to Numbers: The float() function converts the user's string input into a floating-point number (a number that can have decimals), so we can perform mathematical operations on it.
+
+ 4 Conditional Logic: An if-elif-else chain checks which operator the user entered. Based on the operator, it runs the appropriate calculation.
+
+ 5 Division by Zero: The code includes a special check if num2 == 0: before performing division to prevent a ZeroDivisionError, which would crash the program.
+
+ 6 Print the Result: The program uses an f-string (the f"..." syntax) to easily format and print the final result in a readable way.
+
+ 
 
     print("--- Simple Python Calculator ---")
 
@@ -101,40 +115,38 @@ This project was completed as part of my learning journey into C programming.
         print(f"An unexpected error occurred: {e}")
 
 
-  How It Works
-  
- 1 Get User Input: The input() function prompts the user for information and reads what they type as a string (text).
-
- 2 Error Handling: The entire logic is wrapped in a try...except block. The program tries to run the code inside. If the user enters text where a number is expected, a ValueError occurs, and the        program jumps to the except ValueError: block and prints a friendly error message instead of crashing.
-
- 3 Convert Text to Numbers: The float() function converts the user's string input into a floating-point number (a number that can have decimals), so we can perform mathematical operations on it.
-
- 4 Conditional Logic: An if-elif-else chain checks which operator the user entered. Based on the operator, it runs the appropriate calculation.
-
- 5 Division by Zero: The code includes a special check if num2 == 0: before performing division to prevent a ZeroDivisionError, which would crash the program.
-
- 6 Print the Result: The program uses an f-string (the f"..." syntax) to easily format and print the final result in a readable way.
-
+ 
 
 
 # In c+
 
-  
-    #include <iostream>
-    using namespace std;
+ 
+How it works:
 
-    int main() {
-    char op;
-    double num1, num2;
+1. It asks the user to enter an operator (+, -, *, /).
+
+2. Then it takes two numbers as input.
+
+3. It uses a switch-case statement to perform the correct operation.
+
+4. It checks for division by zero when the operator is /.
+
+  
+        #include <iostream>
+        using namespace std;
+
+        int main() {
+        char op;
+        double num1, num2;
 
     
-    cout << "Enter operator (+, -, *, /): ";
-    cin >> op;
+         cout << "Enter operator (+, -, *, /): ";
+         cin >> op;
 
-    cout << "Enter two numbers: ";
-    cin >> num1 >> num2;
+         cout << "Enter two numbers: ";
+        cin >> num1 >> num2;
 
-    switch(op) {
+        switch(op) {
         case '+':
             cout << "Result: " << num1 + num2 << endl;
             break;
@@ -157,40 +169,38 @@ This project was completed as part of my learning journey into C programming.
         default:
             cout << "Invalid operator!" << endl;
             break;
-    }
+           }
 
-    return 0;
-     }
+         return 0;
+          }
 
-How it works:
-
-1. It asks the user to enter an operator (+, -, *, /).
-
-2. Then it takes two numbers as input.
-
-3. It uses a switch-case statement to perform the correct operation.
-
-4. It checks for division by zero when the operator is /.
 
 
 
   # In C++
 
 
-  #include <iostream>
-using namespace std;
+   How it works:
+ 1. User enters an operator (+ - * /).
+ 2. Then inputs two numbers.
+ 3. switch checks which operation to perform.
+ 4. Division checks for 0 to avoid errors.
 
-int main() {
-    char op;
-    float num1, num2;
 
-    cout << "Enter operator (+, -, *, /): ";
-    cin >> op;
+        #include <iostream>
+        using namespace std;
 
-    cout << "Enter two numbers: ";
-    cin >> num1 >> num2;
+        int main() {
+        char op;
+        float num1, num2;
 
-    switch (op) {
+        cout << "Enter operator (+, -, *, /): ";
+        cin >> op;
+
+        cout << "Enter two numbers: ";
+        cin >> num1 >> num2;
+
+        switch (op) {
         case '+':
             cout << "Result: " << num1 + num2;
             break;
@@ -209,8 +219,8 @@ int main() {
         default:
             cout << "Invalid operator!";
             break;
-    }
+          }
 
-    return 0;
-}
-
+        return 0;
+        }
+ 
