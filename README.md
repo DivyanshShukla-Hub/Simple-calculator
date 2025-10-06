@@ -114,3 +114,51 @@ This project was completed as part of my learning journey into C programming.
  5 Division by Zero: The code includes a special check if num2 == 0: before performing division to prevent a ZeroDivisionError, which would crash the program.
 
  6 Print the Result: The program uses an f-string (the f"..." syntax) to easily format and print the final result in a readable way.
+
+
+
+# In c+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char op;
+    double num1, num2;
+
+    // Asking user for input
+    cout << "Enter operator (+, -, *, /): ";
+    cin >> op;
+
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    // Perform calculation based on operator
+    switch(op) {
+        case '+':
+            cout << "Result: " << num1 + num2 << endl;
+            break;
+
+        case '-':
+            cout << "Result: " << num1 - num2 << endl;
+            break;
+
+        case '*':
+            cout << "Result: " << num1 * num2 << endl;
+            break;
+
+        case '/':
+            if (num2 != 0)
+                cout << "Result: " << num1 / num2 << endl;
+            else
+                cout << "Error! Division by zero is not allowed." << endl;
+            break;
+
+        default:
+            cout << "Invalid operator!" << endl;
+            break;
+    }
+
+    return 0;
+}
