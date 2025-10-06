@@ -162,3 +162,13 @@ This project was completed as part of my learning journey into C programming.
 
     return 0;
      }
+
+How it works:
+
+1. It asks the user to enter an operator (+, -, *, /).
+
+2. Then it takes two numbers as input.
+
+3. It uses a switch-case statement to perform the correct operation.
+
+4. It checks for division by zero when the operator is /.
