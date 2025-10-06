@@ -127,14 +127,13 @@ This project was completed as part of my learning journey into C programming.
     char op;
     double num1, num2;
 
-    // Asking user for input
+    
     cout << "Enter operator (+, -, *, /): ";
     cin >> op;
 
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
 
-    // Perform calculation based on operator
     switch(op) {
         case '+':
             cout << "Result: " << num1 + num2 << endl;
@@ -172,3 +171,46 @@ How it works:
 3. It uses a switch-case statement to perform the correct operation.
 
 4. It checks for division by zero when the operator is /.
+
+
+
+  # In C++
+
+
+  #include <iostream>
+using namespace std;
+
+int main() {
+    char op;
+    float num1, num2;
+
+    cout << "Enter operator (+, -, *, /): ";
+    cin >> op;
+
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    switch (op) {
+        case '+':
+            cout << "Result: " << num1 + num2;
+            break;
+        case '-':
+            cout << "Result: " << num1 - num2;
+            break;
+        case '*':
+            cout << "Result: " << num1 * num2;
+            break;
+        case '/':
+            if (num2 != 0)
+                cout << "Result: " << num1 / num2;
+            else
+                cout << "Error! Division by zero.";
+            break;
+        default:
+            cout << "Invalid operator!";
+            break;
+    }
+
+    return 0;
+}
+
