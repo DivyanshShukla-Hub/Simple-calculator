@@ -119,11 +119,11 @@ This project was completed as part of my learning journey into C programming.
 
 # In c+
 
+  
+    #include <iostream>
+    using namespace std;
 
-#include <iostream>
-using namespace std;
-
-int main() {
+    int main() {
     char op;
     double num1, num2;
 
@@ -161,4 +161,4 @@ int main() {
     }
 
     return 0;
-}
+     }
