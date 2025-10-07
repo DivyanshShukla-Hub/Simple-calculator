@@ -129,7 +129,7 @@ How it works:
 
 3. It uses a switch-case statement to perform the correct operation.
 
-4. It checks for division by zero when the operator is /.
+4. It checks for division by zero when the operator is /. 
 
   
         #include <iostream>
