@@ -184,7 +184,7 @@ How it works:
  1. User enters an operator (+ - * /).
  2. Then inputs two numbers.
  3. switch checks which operation to perform.
- 4. Division checks for 0 to avoid errors.
+ 4. Division checks for 0 to avoid errors. 
 
 
         #include <iostream>
