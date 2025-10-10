@@ -226,6 +226,14 @@ How it works:
 
   # In  C+++
 
+How it works:
+
+1.The program asks the user to enter an operator (+, -, *, /, %, ^) or q to quit.
+2.It takes two numbers as input.
+3.Based on the operator, it performs the correct calculation.
+4.It displays the result.
+5.It checks for invalid inputs (like letters or dividing by zero).
+6.The loop repeats until the user enters q to exit.
 
  // simple_calculator.cpp
  
