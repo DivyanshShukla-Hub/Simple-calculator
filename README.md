@@ -312,6 +312,13 @@ How it works:
 
   # In Java
 
+  How it works:
+
+ 1.It takes two numbers as input from the user.
+2. You choose an operator (+, -, *, /).
+3.It performs the calculation using a switch statement.
+4.It prints the result on the screen.
+
 
 
 
