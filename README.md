@@ -240,7 +240,7 @@ void clearInput() {
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
 
-int main() {
+    int main() {
     cout << "Simple Calculator (C++)\n";
     cout << "Supported operations: +  -  *  /  %  ^ (power)\n\n";
 
