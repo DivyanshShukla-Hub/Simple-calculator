@@ -223,4 +223,83 @@ How it works:
 
         return 0;
         }
-  
+
+  # In  C+++
+
+
+ // simple_calculator.cpp
+#include <iostream>
+#include <cmath>    // for pow
+#include <limits>   // for numeric_limits
+
+using namespace std;
+
+void clearInput() {
+    // clear bad input (e.g., non-number) and ignore rest of the line
+    cin.clear();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+}
+
+int main() {
+    cout << "Simple Calculator (C++)\n";
+    cout << "Supported operations: +  -  *  /  %  ^ (power)\n\n";
+
+    while (true) {
+        cout << "Enter operation (+ - * / % ^) or q to quit: ";
+        char op;
+        if (!(cin >> op)) {
+            clearInput();
+            cout << "Invalid input. Try again.\n";
+            continue;
+        }
+        if (op == 'q' || op == 'Q') {
+            cout << "Goodbye!\n";
+            break;
+        }
+
+        // For modulus (%) we want integers; for others use double
+        if (op == '%') {
+            long long a, b;
+            cout << "Enter two integers (a b): ";
+            if (!(cin >> a >> b)) {
+                clearInput();
+                cout << "Invalid integer input. Try again.\n";
+                continue;
+            }
+            if (b == 0) {
+                cout << "Error: Division by zero (modulus undefined).\n";
+                continue;
+            }
+            cout << a << " % " << b << " = " << (a % b) << "\n\n";
+        } else if (op == '+' || op == '-' || op == '*' || op == '/' || op == '^') {
+            double x, y;
+            cout << "Enter two numbers (a b): ";
+            if (!(cin >> x >> y)) {
+                clearInput();
+                cout << "Invalid number input. Try again.\n";
+                continue;
+            }
+            if (op == '+') {
+                cout << x << " + " << y << " = " << (x + y) << "\n\n";
+            } else if (op == '-') {
+                cout << x << " - " << y << " = " << (x - y) << "\n\n";
+            } else if (op == '*') {
+                cout << x << " * " << y << " = " << (x * y) << "\n\n";
+            } else if (op == '/') {
+                if (y == 0.0) {
+                    cout << "Error: Division by zero.\n\n";
+                } else {
+                    cout << x << " / " << y << " = " << (x / y) << "\n\n";
+                }
+            } else { // power
+                // use pow for exponent; handle negative/decimal exponents fine
+                cout << x << " ^ " << y << " = " << pow(x, y) << "\n\n";
+            }
+        } else {
+            cout << "Unknown operation '" << op << "'. Try again.\n";
+        }
+    }
+
+    return 0;
+}
+
