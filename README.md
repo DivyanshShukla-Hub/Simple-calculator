@@ -228,17 +228,17 @@ How it works:
 
 
  // simple_calculator.cpp
-#include <iostream>
-#include <cmath>    // for pow
-#include <limits>   // for numeric_limits
+ 
+     #include <iostream>
+     #include <cmath>    // for pow
+     #include <limits>   // for numeric_limits
 
-using namespace std;
+    using namespace std;
 
-void clearInput() {
-    // clear bad input (e.g., non-number) and ignore rest of the line
+    void clearInput() {
     cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
-}
+    }
 
     int main() {
     cout << "Simple Calculator (C++)\n";
@@ -257,7 +257,6 @@ void clearInput() {
             break;
         }
 
-        // For modulus (%) we want integers; for others use double
         if (op == '%') {
             long long a, b;
             cout << "Enter two integers (a b): ";
@@ -292,7 +291,6 @@ void clearInput() {
                     cout << x << " / " << y << " = " << (x / y) << "\n\n";
                 }
             } else { // power
-                // use pow for exponent; handle negative/decimal exponents fine
                 cout << x << " ^ " << y << " = " << pow(x, y) << "\n\n";
             }
         } else {
