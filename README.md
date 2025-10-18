@@ -3,7 +3,7 @@
  
  # 1 In C programming language    
  
-
+ 
  
 This is a simple calculator built using the C programming language. It's a beginner-friendly project created to practice fundamental C concepts like variables, user input/output (`scanf`/`printf`), and control flow (`switch` statement).
 
