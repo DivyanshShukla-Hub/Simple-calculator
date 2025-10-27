@@ -36,7 +36,7 @@ This project was completed as part of my learning journey into C programming.
          case '+':
             printf("%.1lf + %.1lf = %.1lf\n", num1, num2, num1 + num2);
             break;
-        
+         
         case '-':
             printf("%.1lf - %.1lf = %.1lf\n", num1, num2, num1 - num2);
             break;
