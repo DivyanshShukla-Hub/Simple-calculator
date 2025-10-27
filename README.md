@@ -235,7 +235,7 @@ How it works:
 5.It checks for invalid inputs (like letters or dividing by zero).
 6.The loop repeats until the user enters q to exit.
 
- // simple_calculator.cpp
+ // simple_calculator.cpp 
  
      #include <iostream>
      #include <cmath>    // for pow
