@@ -23,7 +23,7 @@ This project was completed as part of my learning journey into C programming.
        int main() {
     
        char operator;
-
+ 
        printf("Enter an operator (+, -, *, /): ");
        scanf(" %c", &operator); // Note the space before %c
 
