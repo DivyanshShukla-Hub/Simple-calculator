@@ -27,7 +27,7 @@ This project was completed as part of my learning journey into C programming.
        printf("Enter an operator (+, -, *, /): ");
        scanf(" %c", &operator); // Note the space before %c
 
-    
+           
        printf("Enter two numbers: ");
        scanf("%lf %lf", &num1, &num2);
 
